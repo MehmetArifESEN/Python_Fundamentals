@@ -32,3 +32,56 @@
 # for i in range(10,101,5):
 #     print(i, end=",")
 
+# 0 -100 arasında ki çift ve tek sayıların toplamlarını ayrı ayrı ekrana yazdıralım
+# toplamcift = 0
+# toplamtek = 0
+# for i in range(0,100):
+#     if i%2==0:
+#         toplamcift = toplamcift + i
+#     else:
+#         toplamtek = toplamtek + i
+# print(f'Toplamcift = {toplamcift} , toplamtek = {toplamtek}')
+
+# başlangıç, bitiş ve artış miktarlarını kullanıcının belirlediği bir range() fonksiyobundaki ger bir sayının karesını hesaplayarak ekrana yazdıralım
+# baslangic = int(input('Baslangic sayisi giriniz: '))
+# bitis = int(input('Bitiş sayisi giriniz: '))
+# aralik = int(input('Aralik sayisi giriniz: '))
+#
+# for i in range(baslangic, bitis, aralik):
+#     print(f'{i} sayisinin karesi {i*i}\n')
+
+# Faktöriyel hesaplama yapalım
+
+# sayi=int(input("Faktöriyelini almak istediğiniz sayıyı giriniz: "))
+# faktoriyel = 1
+# if sayi < 0:
+#     print("Sayı 0 dan küçük olamaz")
+# else:
+#     for i in range(1,sayi+1):
+#         faktoriyel *= i
+#     print(faktoriyel)
+
+# Nested for Loop
+# for i in range(10):
+#     for j in range(10):
+#         pass
+#
+# Çarpım tablosu istiyoruz
+# for i in range(1,11):
+#     for j in range(1,11):
+#         print(f'{i} x {j} = {i*j}')
+
+# X sembollerini kullanarak içi dolu dikdörtgen yapın
+# kenar1= int(input('1. Kenarı giriniz: '))
+# kenar2= int(input('2. Kenarı giriniz: '))
+# for i in range(kenar1):
+#     for j in range(kenar2):
+#         print('X', end=' ')
+#     print()
+
+
+# x sembolü ile dik üçgem yapalım
+# for i in range(5):
+#     for j in range(i+1):
+#         print('X', end=' ')
+#     print()
