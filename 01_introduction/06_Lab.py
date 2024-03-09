@@ -99,8 +99,19 @@ import random
 # region Task 8
 # users listesi içerisinde bulunan kullanıcılara kurumsal mail adresleri oluşturalım
 # örneğin burak.yilmaz@bilgeadam.com
-users = ['burak yilmaz', ' ertuğrul', 'bora eden erdem', 'kerim andul cabbar okkes', ' ']
-mail_address = []
+# users = ['burak yilmaz', ' ertuğrul', 'bora eden erdem', 'kerim andul cabbar okkes', ' ']
+# mail_address = []
+# for user in users:
+#     user_names = user.split(' ')
+#     for item in user_names:
+#         if item == '':
+#             user_names.remove(item)
+#     if user == " ":
+#         pass
+#     elif len(user_names) >= 2:
+#         mail_address.append(f"{user_names[0]}.{user_names[-1]}@bilgeadam.com")
+#
+# print(mail_address)
 # endregion
 
 # region Task 9
@@ -110,3 +121,13 @@ mail_address = []
 # en az bir tane noktalama işareti olmalı
 # herhangi bir ifade tekrar etmemeli
 # endregion
+
+# List Comprehansion
+# [expression for item in liste if condition]
+# rakamları list comprehansion kullanarak ekrana yazdırın
+print([item for item in range(10)])
+
+power = [item * item for item in range(10)]
+print(power)
+
+print([i * i for i in range(100) if i % 3 == 0])
